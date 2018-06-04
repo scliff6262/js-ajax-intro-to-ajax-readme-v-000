@@ -5,6 +5,11 @@ function showRepositories(event, data) {
   document.getElementById("repositories").innerHTML = repoList
 }
 
+function showCommits(){
+  const commits = JSON.parse(this.responseText)
+  const commitsList = `<ul>${commits.map(c => '<li><strong>' + c.author.login + '</strong> - ' + c.commit.message + '</li>'))
+}
+
 
 function getRepositories(){
   const req = new XMLHttpRequest()
