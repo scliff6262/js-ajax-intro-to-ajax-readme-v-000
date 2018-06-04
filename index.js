@@ -7,7 +7,7 @@ function showRepositories(event, data) {
 
 function showCommits(){
   const commits = JSON.parse(this.responseText)
-  const commitsList = `<ul>${commits.map(c => '<li><strong>' + c.author.login + '</strong> - ' + c.commit.message + '</li>').join(''))
+  const commitsList = `<ul>${commits.map(c => '<li><strong>' + c.author.login + '</strong> - ' + c.commit.message + '</li>').join('')})
 }
 
 
