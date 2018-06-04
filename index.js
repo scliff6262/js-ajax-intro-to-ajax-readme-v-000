@@ -4,6 +4,7 @@ function showRepositories(event, data){
   for(let i = 0; i < this.responseText.length; i++){
     repoList += "<li>" + this.responseText[i]["name"] + "</li>"
   }
+  repoList += "</ul>"
 }
 
 function getRepositories(){
